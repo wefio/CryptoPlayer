@@ -1,0 +1,11 @@
+# 创建项目结构
+mkdir -p project_root/{input_plain,notice_assets,encrypted_output,secrets,player/{core,crypto,metadata,ffmpeg,file,player,cli,config,exceptions,utils},scripts,tests}
+
+# 安装依赖
+pip install pycryptodome colorama tqdm pydantic
+
+# 加密视频
+python scripts/encrypt_video.py input_plain/lesson01.mp4 encrypted_output/lesson01.enc.mp4
+
+# 播放加密视频
+python scripts/play_video.py encrypted_output/lesson01.enc.mp4

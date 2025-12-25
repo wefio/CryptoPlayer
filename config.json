@@ -1,0 +1,35 @@
+{
+  "ffmpeg": {
+    "ffmpeg_path": "ffmpeg",
+    "ffprobe_path": "ffprobe"
+  },
+  "encryption": {
+    "default_algorithm": "AES-CTR",
+    "key_derivation": "PBKDF2",
+    "salt_length": 16,
+    "key_size": 32,
+    "iterations": 100000
+  },
+  "metadata": {
+    "whitelist": [
+      "title",
+      "artist",
+      "comment",
+      "description",
+      "copyright",
+      "encoder",
+      "creation_time"
+    ],
+    "max_field_length": 1024
+  },
+  "file_format": {
+    "magic": "ENCV",
+    "version": 1,
+    "reserved_size": 32
+  },
+  "player": {
+    "skip_notice_by_default": false,
+    "show_metadata_on_start": true,
+    "platform_adaptation": true
+  }
+}

@@ -1,0 +1,83 @@
+project_root/
+│
+├── README.md                     # 项目说明文档
+├── requirements.txt              # 依赖包列表
+├── config.json                   # 主配置文件
+├── metadata.txt                  # 元数据配置文件（示例）
+│
+├── input_plain/                  # 待加密的原始视频
+│   └── lesson01.mp4
+│
+├── notice_assets/                # 版权/购买提示资源
+│   ├── notice.png
+│   ├── notice.mp4
+│   └── notice.txt
+│
+├── encrypted_output/             # 加密后的输出文件
+│   └── lesson01.enc.mp4
+│
+├── secrets/                      # 密钥存储（仅用于测试）
+│   └── password.txt
+│
+├── scripts/                      # 命令行脚本
+│   ├── encrypt_video.py
+│   └── play_video.py
+│
+├── player/                       # 播放器核心代码
+│   ├── __init__.py
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── video_processor.py
+│   │   ├── encryptor.py
+│   │   ├── decryptor.py
+│   │   ├── crypto_factory.py
+│   │   └── key_manager.py
+│   │
+│   ├── crypto/
+│   │   ├── __init__.py
+│   │   ├── base_encryptor.py
+│   │   ├── aes_encryptor.py
+│   │   └── chacha20_encryptor.py
+│   │
+│   ├── metadata/
+│   │   ├── __init__.py
+│   │   ├── metadata_handler.py
+│   │   ├── metadata_validator.py
+│   │   └── metadata_config.py
+│   │
+│   ├── ffmpeg/
+│   │   ├── __init__.py
+│   │   ├── ffmpeg_wrapper.py
+│   │   └── stream_extractor.py
+│   │
+│   ├── file/
+│   │   ├── __init__.py
+│   │   ├── encrypted_video.py
+│   │   └── file_header.py
+│   │
+│   ├── player/
+│   │   ├── __init__.py
+│   │   ├── video_player.py
+│   │   └── platform_adapter.py
+│   │
+│   ├── cli/
+│   │   ├── __init__.py
+│   │   ├── interface.py
+│   │   └── progress.py
+│   │
+│   ├── config/
+│   │   ├── __init__.py
+│   │   └── config_manager.py
+│   │
+│   ├── exceptions/
+│   │   ├── __init__.py
+│   │   └── custom_exceptions.py
+│   │
+│   └── utils/
+│       ├── __init__.py
+│       ├── file_utils.py
+│       └── video_utils.py
+│
+└── tests/                        # 单元测试
+    ├── __init__.py
+    └── test_basic.py

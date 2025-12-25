@@ -1,0 +1,18 @@
+# notice_assets/notice.txt - 元数据配置和提示视频文本
+# 以Key=Value格式配置，空行和#开头的行会被忽略
+
+# ========== 元数据信息（写入视频容器） ==========
+title=加密课程示例视频
+artist=教学团队
+comment=本视频为教学演示内容
+copyright=© 2025 教学演示项目
+encoder=Encrypted Demo Player v1.0
+
+# ========== 提示视频文本（自动生成提示视频时使用） ==========
+# 支持多行文本，使用\n表示换行
+notice_text=本视频为加密内容\n\n请使用官方播放器\n播放完整视频\n\n购买地址:\nhttps://example.com
+
+# ========== 结构化数据（将被转换为udta.json） ==========
+struct.notice_duration=10
+struct.purchase_url=https://example.com/purchase
+struct.player_required=true
