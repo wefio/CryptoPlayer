@@ -33,7 +33,11 @@ python interactive_tool.py
 
 ```ini
 # 提示视频文本（自动生成提示视频时使用）
-notice_text=本视频为加密内容<br>请使用官方播放器<br>播放完整视频<br><br>购买地址:<br>https://example.com
+notice_text=
+本视频为加密内容
+请使用官方播放器
+播放完整视频
+购买地址:https://example.com
 ```
 
 ### secrets/password.txt
